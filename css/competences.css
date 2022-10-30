@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/image/background4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*header*/
+
+header .menu{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #26244b56;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 75px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .headerElements{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: baseline;
+    gap: 30px;
+    font-family: 'Mandatory Plaything', sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+header .headerElements .contacts{
+    background-color: #B15474;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+header .headerElements a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* main*/
+.infoDebutant,
+.infoAvance,
+.languesDebutant,
+.langueAvance {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Mandatory Plaything', sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #EABCDC;
+    box-shadow: 1px 2px 5px #EABCDC;
+    margin: 10% 30% 10% 30%;
+    padding: 20px 20px;
+}
+
+.infoDebutantLogos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 20px;
+}
+
+.jsWp,
+.aiPs,
+.figmaCanva {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* info nv avance */
+.infoAvanceLogo {
+    padding: 20px 20px;
+}
+
+/* langues nv debutant */
+.languesDebutantLogos,
+.langueAvanceLogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 20px;
+}
+
+.japanese,
+.spanish {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+/* langue nv avance*/
+.langueAvanceLogo {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.languesDebutantLogos,
+.langueAvanceLogo {
+    font-size: 0.8rem;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #26244b56;
+    padding: 20px 0px 20px 0;
+    font-family: 'Mandatory Plaything', sans-serif;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .top_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+footer .top_footer img{
+    width: 75px;
+}
+
+footer .footerContacts{
+    background-color: #B15474;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+footer .divider{
+    width: 50%;
+    height: 3px;
+    padding: 20px 0px 20px 0px;
+}
+
+footer h2{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+/* scroll barre */
+body::-webkit-scrollbar{
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #26244be4;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #26244bb4;
+}
+
+/* responsive */
+
+/* responsive header */
+
+@media screen and (max-width:710px) {
+    header .menu{
+        display: initial;
+        width: 100px;
+        display: flex;
+    }
+
+    /*menu astronaute*/
+
+    /* menu caché */
+
+    .headerElements {
+        position: fixed;
+        left: -200%;
+        top: 6%;
+        gap: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .headerElements.active{
+        align-items: center;
+    }
+
+    /*menu apparait */
+
+    .headerElements.active {
+        position: static;
+
+        left: -8%;
+
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+/* responsive main */
+@media screen and (max-width:1150px) {
+
+    .infoDebutant,
+    .infoAvance,
+    .languesDebutant,
+    .langueAvance {
+        font-size: 0.62rem;
+    }
+}
+
+@media screen and (max-width:755px) {
+
+    .infoDebutant,
+    .infoAvance,
+    .languesDebutant,
+    .langueAvance {
+        margin: 10% 10% 10% 10%;
+        padding: 20px 20px;
+        font-size: 0.43rem;
+    }
+
+    .infoDebutantLogos img {
+        width: 40%;
+    }
+
+    .htmlCss img {
+        width: 45%;
+    }
+
+    .languesDebutantLogos {
+        flex-direction: column;
+    }
+}
+
+/* responsive footer */
+@media screen and (max-width:768px) {
+    footer .top_footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    footer .divider{
+        display: none;
+    }
+
+    footer .bottom_footer{
+        padding-top: 40px;
+    }
+}
