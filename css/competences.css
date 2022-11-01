@@ -10,6 +10,11 @@ body {
     background-position: center;
 }
 
+@font-face {
+    font-family: 'Mandatory Plaything';
+    src: url(/mandatory/MandatoryPlaything-nRRd0.ttf);
+}
+
 /*header*/
 
 header .menu{
