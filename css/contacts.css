@@ -110,8 +110,12 @@ a.cv {
 
 a.cvPetit {
     display: none;
-    margin-left: 47%;
-    margin-right: 47%;
+    text-decoration: none;
+    background-color: #B15474;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 43%;
+    margin-right: 43%;
     margin-bottom: 12%;
 }
 
@@ -238,6 +242,8 @@ body::-webkit-scrollbar-thumb{
     a.cvPetit {
         display: initial;
         font-size: 0.8rem;
+        margin-bottom: 12%;
+        display: flex;
     }
 
     h2 {
