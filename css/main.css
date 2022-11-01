@@ -38,7 +38,7 @@ header .headerElements{
     align-content: center;
     align-items: baseline;
     gap: 30px;
-    font-family: 'Mandatory Plaything', sans-serif;
+    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
     font-size: 1rem;
     padding-right: 10px;
 }
@@ -67,7 +67,7 @@ main .entrez{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 'Mandatory Plaything', sans-serif;
+    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
     background-color: #B15474;
     padding: 6px;
     border-radius: 5px;
@@ -88,7 +88,7 @@ footer{
     align-items: center;
     background-color: #26244b56;
     padding: 20px 0px 20px 0;
-    font-family: 'Mandatory Plaything', sans-serif;
+    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
 }
 
 footer a{
