@@ -38,7 +38,7 @@ header .headerElements{
     align-content: center;
     align-items: baseline;
     gap: 30px;
-    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
+    font-family: 'Mandatory Plaything', 'Chakra Petch', 'Orbitron', sans-serif;
     font-size: 1rem;
     padding-right: 10px;
 }
@@ -65,7 +65,7 @@ header .headerElements a{
     flex-direction: column;
     align-items: center;
     color: white;
-    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
+    font-family: 'Mandatory Plaything', 'Chakra Petch', 'Orbitron', sans-serif;
     border-style: solid;
     border-width: 2px;
     border-color: #EABCDC;
@@ -136,7 +136,7 @@ footer{
     align-items: center;
     background-color: #26244b56;
     padding: 20px 0px 20px 0;
-    font-family: 'Mandatory Plaything', 'Orbitron', sans-serif;
+    font-family: 'Mandatory Plaything', 'Chakra Petch', 'Orbitron', sans-serif;
 }
 
 footer a{
