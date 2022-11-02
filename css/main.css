@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb{
 
 /* responsive header */
 
-@media screen and (max-width:710px) {
+@media screen and (max-width:750px) {
     header .menu{
         display: initial;
         width: 100px;
@@ -171,6 +171,7 @@ body::-webkit-scrollbar-thumb{
 
     header .headerElements.active{
         align-items: center;
+        font-size: 0.8rem;
     }
 
     /*menu apparait */
@@ -200,6 +201,12 @@ body::-webkit-scrollbar-thumb{
         padding: 15px 25px 15px 25px
     }
 }
+@media screen and (max-width:768px) {
+    main{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
 @media screen and (max-width:750px) {
     main{
         font-size: 0.6rem;
@@ -215,6 +222,18 @@ body::-webkit-scrollbar-thumb{
 }
 /* responsive footer */
 @media screen and (max-width:768px) {
+    footer, footer h2{
+        font-size: .7rem;
+    }
+    footer .top_footer .logo{
+        width: 50px;
+    }
+    footer .divider{
+        height: 1px;
+    }
+}
+
+@media screen and (max-width:750px) {
     footer .top_footer{
         display: flex;
         flex-wrap: wrap;
