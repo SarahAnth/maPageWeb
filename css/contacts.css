@@ -61,6 +61,11 @@ header .headerElements a{
 
 
 /* main*/
+main{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 h2,
 .infos,
 .numero,
@@ -73,10 +78,6 @@ a.cvPetit {
     align-items: center;
     color: white;
     font-family: 'Mandatory Plaything', 'Chakra Petch', 'Orbitron', sans-serif;
-}
-
-h2 {
-    padding-top: 12%;
 }
 
 .infos {
@@ -105,7 +106,6 @@ a.cv {
     margin-left: 43%;
     margin-right: 43%;
     font-size: 0.7rem;
-    margin-bottom: 12%;
 }
 
 a.cvPetit {
@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb{
 
 /* responsive header */
 
-@media screen and (max-width:710px) {
+@media screen and (max-width:750px) {
     header .menu{
         display: initial;
         width: 100px;
@@ -208,6 +208,7 @@ body::-webkit-scrollbar-thumb{
 
     header .headerElements.active{
         align-items: center;
+        font-size: 0.8rem;
     }
 
     /*menu apparait */
@@ -235,6 +236,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width:750px) {
+    main{
+        margin-top: 125px;
+        margin-bottom: 125px;
+    }
+
     a.cv {
         display: none;
     }
@@ -248,7 +254,6 @@ body::-webkit-scrollbar-thumb{
 
     h2 {
         font-size: 0.65rem;
-        padding-top: 25%;
     }
 
     .infos {
@@ -266,6 +271,18 @@ body::-webkit-scrollbar-thumb{
 
 /* responsive footer */
 @media screen and (max-width:768px) {
+    footer, footer h2{
+        font-size: .7rem;
+    }
+    footer .top_footer .logo{
+        width: 50px;
+    }
+    footer .divider{
+        height: 1px;
+    }
+}
+
+@media screen and (max-width:750px) {
     footer .top_footer{
         display: flex;
         flex-wrap: wrap;

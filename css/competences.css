@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb{
 
 /* responsive header */
 
-@media screen and (max-width:710px) {
+@media screen and (max-width:750px) {
     header .menu{
         display: initial;
         width: 100px;
@@ -221,6 +221,7 @@ body::-webkit-scrollbar-thumb{
 
     header .headerElements.active{
         align-items: center;
+        font-size: 0.8rem;
     }
 
     /*menu apparait */
@@ -248,6 +249,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width:755px) {
+    main{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 
     .infoDebutant,
     .infoAvance,
@@ -273,6 +278,18 @@ body::-webkit-scrollbar-thumb{
 
 /* responsive footer */
 @media screen and (max-width:768px) {
+    footer, footer h2{
+        font-size: .7rem;
+    }
+    footer .top_footer .logo{
+        width: 50px;
+    }
+    footer .divider{
+        height: 1px;
+    }
+}
+
+@media screen and (max-width:750px) {
     footer .top_footer{
         display: flex;
         flex-wrap: wrap;
